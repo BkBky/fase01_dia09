@@ -1,0 +1,93 @@
+Last login: Fri Feb 10 08:39:42 on ttys000
+CodeaCamp09s-Mac-mini:~ codea_mac_09$ cd /Users/codea_mac_09/Desktop/POO_Jueves/csv 
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+  csv.rb
+  people.csv
+  people_ok.csv
+  require.rb
+
+nothing added to commit but untracked files present (use "git add" to track)
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git add .
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git commit -m "csv.rb ejercicio concluído"
+[master (root-commit) e69a469] csv.rb ejercicio concluído
+ 4 files changed, 192 insertions(+)
+ create mode 100644 csv.rb
+ create mode 100644 people.csv
+ create mode 100644 people_ok.csv
+ create mode 100644 require.rb
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git remote add origin https://github.com/33marvil/CSV_Datos_entrada_salida_edicion.git 
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git push -u origin master
+Username for 'https://github.com': 33marvil
+Password for 'https://33marvil@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 2.32 KiB | 0 bytes/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/33marvil/CSV_Datos_entrada_salida_edicion.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git branch csv_edit_data
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git branch
+  csv_edit_data
+* master
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git checkout csv_edit_data
+Switched to branch 'csv_edit_data'
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git branch
+* csv_edit_data
+  master
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git push -u csv_edit_data
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: 'csv_edit_data' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git log
+commit e69a469f774674aa66590c7ccf5f2e4c46ea487f
+Author: codeamac09 <codeamac09@gmail.com>
+Date:   Fri Feb 10 08:47:19 2017 -0600
+
+    csv.rb ejercicio concluído
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git remote add origin https://github.com/BkBky/fase01_dia09.git
+fatal: remote origin already exists.
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git remote add betzabe https://github.com/BkBky/fase01_dia09.git
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ git push -u betzabe master
+Username for 'https://github.com': BkBky
+Password for 'https://BkBky@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 2.32 KiB | 0 bytes/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/BkBky/fase01_dia09.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from betzabe.
+CodeaCamp09s-Mac-mini:csv codea_mac_09$ 
